@@ -1,0 +1,7 @@
+{
+  "name": "ionic-host",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
