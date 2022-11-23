@@ -1,4 +1,4 @@
-import React, { lazy, useEffect } from "react"
+import React, { useEffect } from "react"
 import "./ExploreContainer.css"
 
 // const Button = window.innerWidth >= 576 ? lazy(() => import("remote/ButtonDesktop")) : lazy(() => import("remote/ButtonMobile"))
