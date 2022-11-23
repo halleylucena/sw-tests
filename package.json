@@ -6,6 +6,7 @@
     "@capacitor/app": "4.0.1",
     "@capacitor/core": "4.3.0",
     "@capacitor/haptics": "4.0.1",
+    "@capacitor/ios": "^4.3.0",
     "@capacitor/keyboard": "4.0.1",
     "@capacitor/status-bar": "4.0.1",
     "@ionic/react": "^6.0.0",
@@ -41,9 +42,9 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
+    "start": "node ./scripts/start.js",
+    "build": "node ./scripts/build.js",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -65,7 +66,9 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "4.3.0"
+    "@capacitor/cli": "4.3.0",
+    "concurrently": "^7.4.0",
+    "workbox-webpack-plugin": "^6.5.4"
   },
   "description": "An Ionic project"
 }
