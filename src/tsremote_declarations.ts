@@ -1,3 +1,5 @@
 declare module "remote/ButtonDesktop"
 declare module "remote/ButtonMobile"
 declare module "remote/Documents"
+declare module "remote/DocumentDetail"
+declare module "remote/DocumentDetailOptions"

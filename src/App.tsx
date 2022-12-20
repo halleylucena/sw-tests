@@ -23,6 +23,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import DocumentDetail from './pages/DocumentDetail';
 
 setupIonicReact();
 
@@ -41,6 +42,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/documents" exact={true}>
               <Documents />
+            </Route>
+            <Route path="/documents/:id" exact={true}>
+              <DocumentDetail />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>

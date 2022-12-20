@@ -1,5 +1,6 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from "@ionic/react"
+import { IonButton, IonButtons, IonContent, IonHeader, IonIcon, IonMenuButton, IonPage, IonTitle, IonToolbar } from "@ionic/react"
 import React, { lazy } from "react"
+import { search, filterSharp } from "ionicons/icons"
 
 const DocumentsList = lazy(() => import("remote/Documents"))
 
@@ -10,6 +11,14 @@ const Documents: React.FC = () => {
                 <IonToolbar>
                     <IonButtons slot="start">
                         <IonMenuButton />
+                    </IonButtons>
+                    <IonButtons slot="secondary">
+                        <IonButton>
+                            <IonIcon slot="icon-only" icon={search}></IonIcon>
+                        </IonButton>
+                        <IonButton>
+                            <IonIcon slot="icon-only" icon={filterSharp}></IonIcon>
+                        </IonButton>
                     </IonButtons>
                     <IonTitle>Documents</IonTitle>
                 </IonToolbar>
