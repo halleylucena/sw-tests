@@ -1,7 +1,7 @@
 import { IonContent, IonIcon, IonItem, IonLabel, IonList, IonMenu, IonMenuToggle } from "@ionic/react"
 
 import { useLocation } from "react-router-dom"
-import { documents, mailOutline, mailSharp } from "ionicons/icons"
+import { documents } from "ionicons/icons"
 import "./Menu.css"
 
 interface AppPage {
@@ -12,12 +12,6 @@ interface AppPage {
 }
 
 const appPages: AppPage[] = [
-    {
-        title: "Home",
-        url: "/page/Home",
-        iosIcon: mailOutline,
-        mdIcon: mailSharp,
-    },
     {
         title: "Documents",
         url: "/documents",
