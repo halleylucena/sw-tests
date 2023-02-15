@@ -3,8 +3,7 @@ const { dependencies } = require('./package.json')
 module.exports = {
   name: 'host',
   remotes: {
-    remote: 'remote@https://ionic-components.vercel.app/remoteEntry.js',
-    base: 'base@https://ionic-base.vercel.app/remoteEntry.js'
+    base: 'base@http://localhost:3003/remoteEntry.js'
   },
   shared: {
     ...dependencies,
