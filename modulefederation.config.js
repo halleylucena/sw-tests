@@ -2,7 +2,7 @@ const { dependencies } = require("./package.json")
 
 let baseUrl = "base@http://localhost:3003/remoteEntry.js"
 if (process.env.NODE_ENV === "production") {
-    baseUrl = "https://ionic-base.vercel.app/remoteEntry.js"
+    baseUrl = "base@https://ionic-base.vercel.app/remoteEntry.js"
 }
 
 module.exports = {
